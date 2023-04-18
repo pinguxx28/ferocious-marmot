@@ -1,6 +1,8 @@
 #include <stdio.h>
 
+#include "../tests/tests.h"
+
 int main() {
-	printf("hello world\n");
+	tests();
 	return 0;
 }

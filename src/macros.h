@@ -22,10 +22,10 @@
 #define MAX(x, y) ((x)>(y)?(x):(y))
 
 /* variable modifictations */
-#define CLAMP_BOT(x, l) _STMNT( if((x)<(l)) x = l )
-#define CLAMP_TOP(x, h) _STMNT( if((x)>(h)) x = h )
-#define CLAMP(x, l, h)  _STMNT(CLAMP_BOT((x), (l)) CLAMP_TOP((x), (t)))
-#define SWAP(x, y)      _STMNT(typeof(x) _x = x; x = y; y = _x;)
+#define CLAMP_BOT(x, l) _STMNT( if((x)<(l)) x = l; )
+#define CLAMP_TOP(x, h) _STMNT( if((x)>(h)) x = h; )
+#define CLAMP(x, l, h)  _STMNT(CLAMP_BOT((x), (l)); CLAMP_TOP((x), (h));)
+#define SWAP(T, x, y)   _STMNT(T _x = x; x = y; y = _x;)
 
 #endif /* MACROS_H */
 
