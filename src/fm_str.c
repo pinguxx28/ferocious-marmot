@@ -7,5 +7,5 @@ size_t fm_strlen(const char *str, size_t max_len) {
 		/* do nothing */
 	}
 
-	return (i == max_len) ? i : i + 1;
+	return i;
 }

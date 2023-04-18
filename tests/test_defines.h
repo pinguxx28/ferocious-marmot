@@ -13,8 +13,9 @@
 #include <stdio.h>
 
 /* all tests */
-#define RUN_TESTS  0 /* base line, if 0 no tests are run */
+#define RUN_TESTS  1 /* base line, if 0 no tests are run */
 #define TEST_MACRO 1 /* macros.h */
+#define TEST_FM_STR 1 /* fm_str.h */
 
 /* test macro, helps with testing */
 /* b is the boolean expression and t determines if the test shall be run */

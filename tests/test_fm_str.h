@@ -1,5 +1,5 @@
 /*
- * test_macros.h - creates tests for macros.h
+ * test_fm_str.h - creates tests for fm_str.h
  *
  * Copyright (c) 2023 pinguxx28
  *
@@ -7,9 +7,9 @@
  * See the LICENSE file for more details.
  */
 
-#ifndef TEST_MACROS_H
-#define TEST_MACROS_H
+#ifndef TEST_FM_STR_H
+#define TEST_FM_STR_H
 
-void test_macros(void);
+void test_fm_str(void);
 
-#endif /* TEST_MACROS_H */
+#endif /* TEST_FM_STR_H */
