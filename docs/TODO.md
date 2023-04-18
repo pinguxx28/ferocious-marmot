@@ -1,7 +1,7 @@
 ## Todo
 
 - ~~tests~~
-- string functions
+- ~~string functions~~
 - simple terminal user interface
 - fetch
 - update
