@@ -11,9 +11,14 @@
 #define FM_STR_H
 
 #include <stddef.h>
+#include <stdbool.h>
 
 /* returns length of string */
 /* if not terminating character is found, it returns max_len */
 size_t fm_strlen(const char *str, size_t max_len);
+
+/* check if s1 is equal to s2 */
+/* if not terminating character is found, it returns false */
+bool fm_streq(const char *s1, const char *s2, size_t max_len);
 
 #endif /* FM_STR_H */
