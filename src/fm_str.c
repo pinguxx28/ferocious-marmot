@@ -1,5 +1,7 @@
 #include "fm_str.h"
 
+#include <ctype.h>
+
 size_t fm_strlen(const char *str, size_t max_len) {
 	size_t i;
 
@@ -17,4 +19,10 @@ bool fm_streq(const char *s1, const char *s2, size_t max_len) {
 	}
 
 	return true;
+}
+
+void fm_strtolower(char *str, size_t max_len) {
+	for (size_t i = 0; i < max_len; i++) {
+		str[i] = tolower(str[i]);
+	}
 }

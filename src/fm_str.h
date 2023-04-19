@@ -19,6 +19,10 @@ size_t fm_strlen(const char *str, size_t max_len);
 
 /* check if s1 is equal to s2 */
 /* if not terminating character is found, it returns false */
+/* if max_len is 0, it returns true */
 bool fm_streq(const char *s1, const char *s2, size_t max_len);
+
+/* converts string to lower case */
+void fm_strtolower(char *str, size_t max_len);
 
 #endif /* FM_STR_H */
