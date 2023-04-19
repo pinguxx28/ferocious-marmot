@@ -16,6 +16,7 @@ typedef enum {
 	DISPLAY,
 	GENERATE,
 	ERASE,
+	UNKNOWN,
 } COMMAND;
 
 void display_menu(void);
