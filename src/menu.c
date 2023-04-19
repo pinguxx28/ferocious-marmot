@@ -10,3 +10,11 @@ void display_menu(void)
 	printf("4. Generate\n");
 	printf("5. Erase\n");
 }
+
+COMMAND get_command(void)
+{
+	char str[10];
+	scanf("%s", str);
+
+	return FETCH;
+}

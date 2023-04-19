@@ -10,6 +10,15 @@
 #ifndef MENU_H
 #define MENU_H
 
+typedef enum {
+	FETCH,
+	UPDATE,
+	DISPLAY,
+	GENERATE,
+	ERASE,
+} COMMAND;
+
 void display_menu(void);
+COMMAND get_command(void);
 
 #endif /* MENU_H */
