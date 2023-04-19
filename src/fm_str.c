@@ -12,9 +12,8 @@ size_t fm_strlen(const char *str, size_t max_len) {
 
 bool fm_streq(const char *s1, const char *s2, size_t max_len) {
 	for (size_t i = 0; i < max_len; i++) {
-		if (s1[i] != s2[i] || s1[i] == '\0') {
-			return false;
-		}
+		if (s1[i] != s2[i]) return false;
+		if (s1[i] == '\0') break;
 	}
 
 	return true;
