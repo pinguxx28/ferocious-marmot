@@ -20,13 +20,12 @@
 /* test macro, helps with testing */
 /* b is the boolean expression and t determines if the test shall be run */
 #define TEST(b, t) do { \
-	if (t && RUN_TESTS) { \
-		printf("%s,%d ["#b"] = %s\n", \
-			__FILE__, __LINE__, \
-			(b)? \
-				"SUCCESS": \
-				"FAILIURE"); \
-	} \
+	if (t && RUN_TESTS) \
+		if (!(b)) \
+			fprintf(stderr, \
+				"%s,%d ["#b"] = %s\n", \
+				__FILE__, __LINE__, \
+				(b)?"SUCCESS":"FAILIURE"); \
 } while(0)
 
 #endif /* TEST_DEFINES_H */
