@@ -8,5 +8,6 @@ int main() {
 	tests();
 	clear();
 	display_menu();
+	get_command();
 	return 0;
 }

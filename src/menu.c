@@ -17,8 +17,10 @@ COMMAND get_command(void)
 	/* no word is longer than 10 */
 	const size_t lw = 10;
 
-	char str[10];
+	char str[lw];
 	scanf("%s", str);
+
+	fm_strtolower(str, lw); /* convert to lowercase */
 
 	COMMAND cmd;
 
