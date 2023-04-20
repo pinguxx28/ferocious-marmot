@@ -38,7 +38,8 @@ size_t fm_getstr(char *str, size_t max_len) {
 
 		str[i] = c;
 	}
-	str[i + 1] = '\0';
+	str[i] = '\0';
 
 	return i;
 }
+

@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <limits.h>
+#include <string.h> /* only used for strerror */
 #include "fm_str.h"
 
 void cmd_handle_update(void) {
@@ -19,5 +20,7 @@ void cmd_handle_update(void) {
 
 void cmd_update(const char *oldpath, const char *newpath) {
 	int error = rename(oldpath, newpath);
-	printf("%d\n", error);
+
+	if (error)
+		printf("Error renaming [%s] -> [%s]: %s\n", oldpath, newpath, strerror(error));
 }
