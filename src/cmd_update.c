@@ -2,16 +2,17 @@
 
 #include <stdio.h>
 #include <limits.h>
+#include "fm_str.h"
 
 void cmd_handle_update(void) {
 	char oldpath[FILE_MAX];
 	char newpath[FILE_MAX];
 
 	printf("old file: ");
-	scanf("%s", oldpath);
+	fm_getstr(oldpath, FILE_MAX);
 
 	printf("new file: ");
-	scanf("%s", newpath);
+	fm_getstr(newpath, FILE_MAX);
 
 	cmd_update(oldpath, newpath);
 }

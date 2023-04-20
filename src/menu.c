@@ -18,9 +18,10 @@ COMMAND get_command(void)
 	const size_t lw = 10;
 
 	char str[lw];
-	scanf("%s", str);
+	fm_getstr(str, lw);
 
 	fm_strtolower(str, lw); /* convert to lowercase */
+	printf("[%s]\n", str);
 
 	COMMAND cmd;
 

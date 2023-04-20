@@ -25,4 +25,8 @@ bool fm_streq(const char *s1, const char *s2, size_t max_len);
 /* converts string to lower case */
 void fm_strtolower(char *str, size_t max_len);
 
+/* get string from stdio */
+/* returns the length of the string */
+size_t fm_getstr(char *str, size_t max_len);
+
 #endif /* FM_STR_H */

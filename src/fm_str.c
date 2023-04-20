@@ -1,5 +1,6 @@
 #include "fm_str.h"
 
+#include <stdio.h>
 #include <ctype.h>
 
 size_t fm_strlen(const char *str, size_t max_len) {
@@ -25,4 +26,19 @@ void fm_strtolower(char *str, size_t max_len) {
 	for (size_t i = 0; i < max_len; i++) {
 		str[i] = tolower(str[i]);
 	}
+}
+
+size_t fm_getstr(char *str, size_t max_len) {
+	char c;
+	size_t i;
+
+	for (i = 0; i < max_len; i++) {
+		c = getchar();
+		if (c == EOF || c == '\n') break;
+
+		str[i] = c;
+	}
+	str[i + 1] = '\0';
+
+	return i;
 }
