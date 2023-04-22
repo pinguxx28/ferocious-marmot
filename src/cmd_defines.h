@@ -13,4 +13,7 @@
 /* maximum length of file in characters */
 #define FILE_MAX 80
 
+/* maximum length of file in lines */
+#define FILE_LINE_MAX 256
+
 #endif

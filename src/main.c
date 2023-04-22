@@ -5,6 +5,7 @@
 #include "cursor.h"
 #include "menu.h"
 #include "cmd_update.h"
+#include "cmd_display.h"
 #include "cmd_generate.h"
 #include "cmd_erase.h"
 
@@ -16,6 +17,9 @@ int main() {
 	switch (cmd) {
 		case UPDATE:
 			cmd_handle_update();
+			break;
+		case DISPLAY:
+			cmd_handle_display();
 			break;
 		case GENERATE:
 			cmd_handle_generate();
