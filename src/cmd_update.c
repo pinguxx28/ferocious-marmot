@@ -1,9 +1,9 @@
 #include "cmd_update.h"
 
 #include <stdio.h>
-#include <limits.h>
 #include <string.h> /* only used for strerror */
 #include "fm_str.h"
+#include "cmd_defines.h"
 
 void cmd_handle_update(void) {
 	char oldpath[FILE_MAX];

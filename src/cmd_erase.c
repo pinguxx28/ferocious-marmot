@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h> /* only used for strerror */
 #include "fm_str.h"
+#include "cmd_defines.h"
 
 void cmd_handle_erase(void) {
 	char path[FILE_MAX];

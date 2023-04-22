@@ -10,9 +10,6 @@
 #ifndef CMD_ERASE_H
 #define CMD_ERASE_H
 
-/* maximum file name */
-#define FILE_MAX 80
-
 /* handle erasing, such as taking input etc. */
 void cmd_handle_erase(void);
 

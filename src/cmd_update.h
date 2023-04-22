@@ -10,9 +10,6 @@
 #ifndef CMD_UPDATE_H
 #define CMD_UPDATE_H
 
-/* maximum file name */
-#define FILE_MAX 80
-
 /* handle renaming, such as taking input etc. */
 void cmd_handle_update(void);
 
