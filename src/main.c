@@ -4,6 +4,7 @@
 #include "cursor.h"
 #include "menu.h"
 #include "cmd_update.h"
+#include "cmd_erase.h"
 
 int main() {
 	tests();
@@ -13,6 +14,9 @@ int main() {
 	switch (cmd) {
 		case UPDATE:
 			cmd_handle_update();
+			break;
+		case ERASE:
+			cmd_handle_erase();
 			break;
 		default:
 			break;
