@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 #include "../tests/tests.h"
+#include "cmd_generate.h"
 #include "cursor.h"
 #include "menu.h"
 #include "cmd_update.h"
+#include "cmd_generate.h"
 #include "cmd_erase.h"
 
 int main() {
@@ -14,6 +16,9 @@ int main() {
 	switch (cmd) {
 		case UPDATE:
 			cmd_handle_update();
+			break;
+		case GENERATE:
+			cmd_handle_generate();
 			break;
 		case ERASE:
 			cmd_handle_erase();

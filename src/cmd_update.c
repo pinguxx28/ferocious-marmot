@@ -1,6 +1,7 @@
 #include "cmd_update.h"
 
 #include <stdio.h>
+#include <errno.h>
 #include <string.h> /* only used for strerror */
 #include "fm_str.h"
 #include "cmd_defines.h"
@@ -22,5 +23,5 @@ void cmd_update(const char *oldpath, const char *newpath) {
 	int error = rename(oldpath, newpath);
 
 	if (error)
-		printf("Error renaming [%s] -> [%s]: %s\n", oldpath, newpath, strerror(error));
+		printf("Error renaming [%s] -> [%s]: %s\n", oldpath, newpath, strerror(errno));
 }

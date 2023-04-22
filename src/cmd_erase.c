@@ -1,6 +1,7 @@
 #include "cmd_erase.h"
 
 #include <stdio.h>
+#include <errno.h>
 #include <string.h> /* only used for strerror */
 #include "fm_str.h"
 #include "cmd_defines.h"
@@ -19,5 +20,5 @@ void cmd_erase(const char *path) {
 	int error = remove(path);
 
 	if (error)
-		printf("Error renaming [%s]: %s\n", path, strerror(error));
+		printf("Error renaming [%s]: %s\n", path, strerror(errno));
 }

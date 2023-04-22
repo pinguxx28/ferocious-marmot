@@ -21,7 +21,6 @@ COMMAND get_command(void)
 	fm_getstr(str, lw);
 
 	fm_strtolower(str, lw); /* convert to lowercase */
-	printf("[%s]\n", str);
 
 	COMMAND cmd;
 
